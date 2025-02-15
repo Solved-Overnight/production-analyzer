@@ -1,0 +1,9 @@
+pdfplumber
+colorama
+pywhatkit
+flask
+streamlit
+requests
+pandas
+plotly
+pyperclip
