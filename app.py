@@ -99,23 +99,6 @@ if uploaded_file:
             # Display report in a text area
             data = simpleTextExtraction.copyText(uploaded_file)
             st.text_area("📋 Report", data, height=300)
-
-            # # JavaScript function to copy text
-            # copy_script = f"""
-            #     <script>
-            #     function copyToClipboard() {{
-            #         navigator.clipboard.writeText(`{data}`).then(() => {{
-            #             alert("✅ Report copied to clipboard!");
-            #         }}).catch(err => {{
-            #             alert("❌ Failed to copy. Try again.");
-            #         }});
-            #     }}
-            #     </script>
-            #     <button onclick="copyToClipboard()">📋 Copy to Clipboard</button>
-            # """
-            # # Show copy button
-            # st.markdown(copy_script, unsafe_allow_html=True)
-
         else:
             st.error("⚠️ Could not find production data in the PDF.")
 else:
